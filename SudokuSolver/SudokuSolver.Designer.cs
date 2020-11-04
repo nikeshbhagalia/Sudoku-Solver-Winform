@@ -114,7 +114,7 @@
             this._sudokuPanel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // SudokuPanel
+            // _sudokuPanel
             // 
             this._sudokuPanel.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this._sudokuPanel.ColumnCount = 9;
@@ -209,7 +209,7 @@
             this._sudokuPanel.Controls.Add(this.textBox2, 1, 0);
             this._sudokuPanel.Controls.Add(this.textBox1, 0, 0);
             this._sudokuPanel.Location = new System.Drawing.Point(83, 58);
-            this._sudokuPanel.Name = "SudokuPanel";
+            this._sudokuPanel.Name = "_sudokuPanel";
             this._sudokuPanel.RowCount = 9;
             this._sudokuPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
             this._sudokuPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
