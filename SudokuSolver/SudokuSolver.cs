@@ -95,5 +95,29 @@ namespace SudokuSolver
 
             return true;
         }
+
+        private void TextBoxInputLogic(object sender, EventArgs e)
+        {
+            var textBox = sender as TextBox;
+            var textBoxText = textBox.Text;
+            if (textBoxText == string.Empty)
+            {
+                return;
+            }
+
+            if (textBoxText.Length > 1)
+            {
+                textBoxText = textBoxText[0].ToString();
+            }
+
+            textBox.Text = CheckTextIsValidShort(textBoxText)
+                ? textBoxText
+                : string.Empty;
+
+            textBox.SelectionStart = 1;
+        }
+
+        private bool CheckTextIsValidShort(string text) =>
+            Int16.TryParse(text, out short result) && result != 0;
     }
 }
