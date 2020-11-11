@@ -87,7 +87,7 @@ namespace SudokuSolver
             var startRow = row - row % 3;
             var startCol = column - column % 3;
 
-            for (int i = 0; i < 3; i++)
+            for (var i = 0; i < 3; i++)
                 for (int j = 0; j < 3; j++)
                     if (sudoku[i + startRow,j + startCol] == number)
                         return false;
