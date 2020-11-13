@@ -76,7 +76,7 @@ namespace SudokuSolver
 
         private bool isValid(short[,] sudoku, int row, int column, int number)
         {
-            for (var y = 0; y <= 8; y++)
+            for (var y = 0; y < SudokuSize; y++)
                 if (sudoku[row,y] == number)
                     return false;
 
