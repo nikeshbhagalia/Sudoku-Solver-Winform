@@ -80,7 +80,7 @@ namespace SudokuSolver
                 if (sudoku[row,y] == number)
                     return false;
 
-            for (var x = 0; x <= 8; x++)
+            for (var x = 0; x < SudokuSize; x++)
                 if (sudoku[x,column] == number)
                     return false;
 
