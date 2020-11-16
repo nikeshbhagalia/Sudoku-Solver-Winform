@@ -6,6 +6,7 @@ namespace SudokuSolver
     public partial class SudokuSolver : Form
     {
         private const int SudokuSize = 9;
+        private const int SquareSize = 3;
 
         public SudokuSolver()
         {
@@ -84,7 +85,7 @@ namespace SudokuSolver
                 if (sudoku[row,y] == number)
                     return false;
 
-            var startRow = row - row % 3;
+            var startRow = row - row % SquareSize;
             var startCol = column - column % 3;
 
             for (var i = 0; i < 3; i++)
