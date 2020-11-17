@@ -86,7 +86,7 @@ namespace SudokuSolver
                     return false;
 
             var startRow = row - row % SquareSize;
-            var startCol = column - column % 3;
+            var startCol = column - column % SquareSize;
 
             for (var i = 0; i < 3; i++)
                 for (var j = 0; j < 3; j++)
