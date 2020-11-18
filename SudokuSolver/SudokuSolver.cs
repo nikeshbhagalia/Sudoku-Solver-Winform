@@ -88,7 +88,7 @@ namespace SudokuSolver
             var startRow = row - row % SquareSize;
             var startCol = column - column % SquareSize;
 
-            for (var i = 0; i < 3; i++)
+            for (var i = 0; i < SquareSize; i++)
                 for (var j = 0; j < 3; j++)
                     if (sudoku[i + startRow,j + startCol] == number)
                         return false;
