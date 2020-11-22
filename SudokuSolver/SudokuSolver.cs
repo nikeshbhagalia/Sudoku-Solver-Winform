@@ -55,9 +55,7 @@ namespace SudokuSolver
             }
 
             if (sudoku[row,column] != 0)
-            {
                 return SolveSudoku(sudoku, row, column + 1);
-            }
 
             for (var number = 1; number <= SudokuSize; number++)
             {
