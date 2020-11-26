@@ -32,10 +32,8 @@ namespace SudokuSolver
             if (solved)
             {
                 for (var i = 0; i < SudokuSize; i++)
-                {
                     for (var j = 0; j < SudokuSize; j++)
                         _sudokuPanel.GetControlFromPosition(i, j).Text = sudoku[i, j].ToString();
-                }
             }
         }
 
