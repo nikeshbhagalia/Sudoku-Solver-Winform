@@ -18,14 +18,12 @@ namespace SudokuSolver
             var sudoku = new short[SudokuSize, SudokuSize];
 
             for (var i = 0; i < SudokuSize; i++)
-            {
                 for (var j = 0; j < SudokuSize; j++)
                 {
                     var number = _sudokuPanel.GetControlFromPosition(i, j).Text;
                     if (!string.IsNullOrEmpty(number))
                         sudoku[i, j] = short.Parse(number);
                 }
-            }
 
             var solved = SolveSudoku(sudoku, 0, 0);
 
