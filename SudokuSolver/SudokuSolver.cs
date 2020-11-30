@@ -38,7 +38,7 @@ namespace SudokuSolver
             if (row is SudokuSize - 1 && column == SudokuSize)
                 return true;
 
-            if (column == SudokuSize)
+            if (column is SudokuSize)
             {
                 row++;
                 column = 0;
