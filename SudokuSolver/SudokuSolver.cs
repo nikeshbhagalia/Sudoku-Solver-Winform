@@ -70,7 +70,7 @@ namespace SudokuSolver
                     return false;
                     
             for (var y = 0; y < SudokuSize; y++)
-                if (sudoku[row,y] == number)
+                if (sudoku[row,y] is number)
                     return false;
 
             var startRow = row - row % SquareSize;
