@@ -22,7 +22,9 @@ namespace SudokuSolver
                 {
                     var number = _sudokuPanel.GetControlFromPosition(i, j).Text;
                     if (!string.IsNullOrEmpty(number))
+                    {
                         sudoku[i, j] = short.Parse(number);
+                    }
                 }
 
             var solved = SolveSudoku(sudoku, 0, 0);
