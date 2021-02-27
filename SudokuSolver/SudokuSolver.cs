@@ -68,7 +68,9 @@ namespace SudokuSolver
                     sudoku[row,column] = (short)number;
 
                     if (SolveSudoku(sudoku, row, column + 1))
+                    {
                         return true;
+                    }
                 }
 
                 sudoku[row,column] = 0;
