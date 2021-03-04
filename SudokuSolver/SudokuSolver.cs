@@ -92,7 +92,9 @@ namespace SudokuSolver
             for (var y = 0; y < SudokuSize; y++)
             {
                 if (sudoku[row,y] is number)
+                {
                     return false;
+                }
             }
 
             var startRow = row - row % SquareSize;
