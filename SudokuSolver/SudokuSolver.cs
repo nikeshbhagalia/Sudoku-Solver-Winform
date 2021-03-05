@@ -103,8 +103,10 @@ namespace SudokuSolver
             for (var i = 0; i < SquareSize; i++)
             {
                 for (var j = 0; j < SquareSize; j++)
+                {
                     if (sudoku[i + startRow,j + startCol] is number)
                         return false;
+                }
             }
 
             return true;
