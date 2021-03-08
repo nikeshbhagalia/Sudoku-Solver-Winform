@@ -122,7 +122,9 @@ namespace SudokuSolver
                 return;
 
             if (textBoxText.Length > 1)
+            {
                 textBoxText = textBoxText[0].ToString();
+            }
 
             textBox.Text = CheckTextIsValidShort(textBoxText)
                 ? textBoxText
