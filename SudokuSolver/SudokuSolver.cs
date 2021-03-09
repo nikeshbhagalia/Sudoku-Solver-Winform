@@ -119,7 +119,9 @@ namespace SudokuSolver
             var textBox = sender as TextBox;
             var textBoxText = textBox.Text;
             if (string.IsNullOrEmpty(textBoxText))
+            {
                 return;
+            }
 
             if (textBoxText.Length > 1)
             {
