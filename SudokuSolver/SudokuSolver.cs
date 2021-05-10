@@ -19,12 +19,12 @@ namespace SudokuSolver
 
             for (var row = 0; row < SudokuSize; row++)
             {
-                for (var j = 0; j < SudokuSize; j++)
+                for (var column = 0; column < SudokuSize; column++)
                 {
-                    var number = _sudokuPanel.GetControlFromPosition(row, j).Text;
+                    var number = _sudokuPanel.GetControlFromPosition(row, column).Text;
                     if (!string.IsNullOrEmpty(number))
                     {
-                        sudoku[row, j] = short.Parse(number);
+                        sudoku[row, column] = short.Parse(number);
                     }
                 }
             }
