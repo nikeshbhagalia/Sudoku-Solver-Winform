@@ -35,9 +35,9 @@ namespace SudokuSolver
             {
                 for (var row = 0; row < SudokuSize; row++)
                 {
-                    for (var j = 0; j < SudokuSize; j++)
+                    for (var column = 0; column < SudokuSize; column++)
                     {
-                        _sudokuPanel.GetControlFromPosition(row, j).Text = sudoku[row, j].ToString();
+                        _sudokuPanel.GetControlFromPosition(row, column).Text = sudoku[row, column].ToString();
                     }
                 }
             }
