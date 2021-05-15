@@ -17,14 +17,14 @@ namespace SudokuSolver
         {
             var sudoku = new short[SudokuSize, SudokuSize];
 
-            for (var row = 0; row < SudokuSize; row++)
+            for (var rowIndex = 0; rowIndex < SudokuSize; rowIndex++)
             {
                 for (var column = 0; column < SudokuSize; column++)
                 {
-                    var number = _sudokuPanel.GetControlFromPosition(row, column).Text;
+                    var number = _sudokuPanel.GetControlFromPosition(rowIndex, column).Text;
                     if (!string.IsNullOrEmpty(number))
                     {
-                        sudoku[row, column] = short.Parse(number);
+                        sudoku[rowIndex, column] = short.Parse(number);
                     }
                 }
             }
