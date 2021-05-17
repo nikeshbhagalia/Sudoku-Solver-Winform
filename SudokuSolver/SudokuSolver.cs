@@ -33,11 +33,11 @@ namespace SudokuSolver
 
             if (solved)
             {
-                for (var row = 0; row < SudokuSize; row++)
+                for (var rowIndex = 0; rowIndex < SudokuSize; rowIndex++)
                 {
                     for (var column = 0; column < SudokuSize; column++)
                     {
-                        _sudokuPanel.GetControlFromPosition(row, column).Text = sudoku[row, column].ToString();
+                        _sudokuPanel.GetControlFromPosition(rowIndex, column).Text = sudoku[rowIndex, column].ToString();
                     }
                 }
             }
