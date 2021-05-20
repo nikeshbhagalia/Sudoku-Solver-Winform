@@ -43,37 +43,37 @@ namespace SudokuSolver
             }
         }
 
-        private bool SolveSudoku(short[,] sudoku, int rowIndex, int column)
+        private bool SolveSudoku(short[,] sudoku, int rowIndex, int columnIndex)
         {
-            if (rowIndex == SudokuSize - 1 && column == SudokuSize)
+            if (rowIndex == SudokuSize - 1 && columnIndex == SudokuSize)
             {
                 return true;
             }
 
-            if (column is SudokuSize)
+            if (columnIndex is SudokuSize)
             {
                 rowIndex++;
-                column = 0;
+                columnIndex = 0;
             }
 
-            if (sudoku[rowIndex,column] != 0)
+            if (sudoku[rowIndex,columnIndex] != 0)
             {
-                return SolveSudoku(sudoku, rowIndex, column + 1);
+                return SolveSudoku(sudoku, rowIndex, columnIndex + 1);
             }
 
             for (var number = 1; number <= SudokuSize; number++)
             {
-                if (isValid(sudoku, rowIndex, column, number))
+                if (isValid(sudoku, rowIndex, columnIndex, number))
                 {
-                    sudoku[rowIndex,column] = (short)number;
+                    sudoku[rowIndex,columnIndex] = (short)number;
 
-                    if (SolveSudoku(sudoku, rowIndex, column + 1))
+                    if (SolveSudoku(sudoku, rowIndex, columnIndex + 1))
                     {
                         return true;
                     }
                 }
 
-                sudoku[rowIndex,column] = 0;
+                sudoku[rowIndex,columnIndex] = 0;
             }
 
             return false;
