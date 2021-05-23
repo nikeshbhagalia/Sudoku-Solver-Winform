@@ -83,7 +83,7 @@ namespace SudokuSolver
         {
             for (var x = 0; x < SudokuSize; x++)
             {
-                if (sudoku[x,column] is number)
+                if (sudoku[x,column] == number)
                 {
                     return false;
                 }
