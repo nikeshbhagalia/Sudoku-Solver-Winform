@@ -50,7 +50,7 @@ namespace SudokuSolver
                 return true;
             }
 
-            if (columnIndex is SudokuSize)
+            if (columnIndex == SudokuSize)
             {
                 rowIndex++;
                 columnIndex = 0;
