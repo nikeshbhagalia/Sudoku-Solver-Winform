@@ -91,7 +91,7 @@ namespace SudokuSolver
                     
             for (var y = 0; y < SudokuSize; y++)
             {
-                if (sudoku[row,y] is number)
+                if (sudoku[row,y] == number)
                 {
                     return false;
                 }
