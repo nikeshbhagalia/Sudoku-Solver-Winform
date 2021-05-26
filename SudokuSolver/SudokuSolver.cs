@@ -45,7 +45,7 @@ namespace SudokuSolver
 
         private bool SolveSudoku(short[,] sudoku, int rowIndex, int columnIndex)
         {
-            if (rowIndex == SudokuSize - 1 && columnIndex == SudokuSize)
+            if (rowIndex == (SudokuSize - 1) && columnIndex == SudokuSize)
             {
                 return true;
             }
