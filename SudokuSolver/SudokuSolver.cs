@@ -43,7 +43,7 @@ namespace SudokuSolver
             }
         }
 
-        private bool SolveSudoku(short[,] sudoku, int rowIndex, int columnIndex)
+        private bool SolveSudoku(short[,] sudoku, int rowIndex, int columnIndex)//solve without brute force
         {
             if (rowIndex == (SudokuSize - 1) && columnIndex == SudokuSize)
             {
