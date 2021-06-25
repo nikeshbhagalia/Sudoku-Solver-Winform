@@ -1,3 +1,3 @@
 # Sudoku-Solver-Winform
 
-Windows form with brute force algorithm
+Windows form with brute force algorithm.
