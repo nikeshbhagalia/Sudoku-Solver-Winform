@@ -2,4 +2,4 @@
 
 Windows Form with brute force algorithm.
 
-Input Sudoku in text boxes and click Solve
+Input Sudoku in text boxes and click solve
