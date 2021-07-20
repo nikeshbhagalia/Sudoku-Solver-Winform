@@ -1,4 +1,4 @@
-# Sudoku Solver Windows form
+# Sudoku Solver Windows Form
 
 Windows Form with brute force algorithm.
 
